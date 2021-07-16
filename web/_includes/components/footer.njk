@@ -1,31 +1,7 @@
 <div class="wide content">
-    <section>
-        <h2>Newsletter</h2>
-        <div id="revue-embed">
-            {% if footer.newsletter.length > 0 %}
-                <div class="newsletter-explanation">
-                    <p>{{footer.newsletter | markdownify | safe}}</p>
-                </div>
-            {% endif %}
-            <form action="https://www.getrevue.co/profile/neuescript/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-                <div class="revue-form-group">
-                    <label for="member_email">Email address</label>
-                    <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-                </div>
-                <div class="revue-form-group">
-                    <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
-                    <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
-                </div>
-                <div class="revue-form-group">
-                    <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
-                    <input class="revue-form-field" placeholder="Last name... (Optional)" type="text" name="member[last_name]" id="member_last_name">
-                </div>
-                <div class="revue-form-actions">
-                    <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
-                </div>
-            </form>
-        </div>
-    </section>
+  <section class=" privacy">
+      {{footer.privacy | markdownify | safe}}
+  </section>
     <section>
         <h2>Contact</h2>
         <p>
@@ -34,7 +10,7 @@
     </section>
     <section>
         <h2>Social media</h2>
-        
+
         <ul>
             {% for link in footer.social %}
                 <li><a href="{{link.href}}">{{link.linkName}}</a></li>
@@ -43,9 +19,7 @@
     </section>
 </div>
 
-<div class="wide privacy">
-    {{footer.privacy | markdownify | safe}} 
-</div>
+
 
 {% set css %}
     {% include "components/footer.css" %}
