@@ -1,10 +1,10 @@
-.mainHeader h1 {
+.mainHeader .logo {
     font-size: var(--font-size-large);
     font-weight: 600;
     text-transform: lowercase;
 }
 
-.mainHeader h1 > a:focus {
+.mainHeader .logo > a:focus {
   outline-offset: 3px;
   outline: dotted 3px;
 }
