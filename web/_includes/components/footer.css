@@ -69,6 +69,14 @@ footer .content section ul li a {
     margin-top: 2rem;
 }
 
+.privacy a {
+  line-height: 2;
+}
+
+footer a {
+  color: inherit;
+}
+
 @media screen and (max-width: 900px) {
     footer .content {
         grid-template-columns: 1fr;
