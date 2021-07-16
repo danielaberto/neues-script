@@ -64,17 +64,23 @@ footer .content section ul li a {
     color: var(--font-color);
 }
 
-.privacy {
-    font-size: 0.8rem;
-    margin-top: 2rem;
+footer h2 {
+  margin-bottom: .5em;
 }
 
+footer .social-media-links a,
 .privacy a {
-  line-height: 2;
+  display: inline-block;
+  margin-bottom: .5em;
 }
 
 footer a {
   color: inherit;
+}
+
+footer a:focus {
+  outline-offset: 3px;
+  outline: dotted 3px;
 }
 
 @media screen and (max-width: 900px) {

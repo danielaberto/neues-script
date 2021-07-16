@@ -114,6 +114,12 @@ blockquote {
     margin-bottom: 3rem;
 }
 
+.post-body a:focus,
+.read-more a:focus {
+  outline-offset: 3px;
+  outline: dotted 3px;
+}
+
 @keyframes brand-left {
     0% {
         top: 200px;

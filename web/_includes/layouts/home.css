@@ -14,6 +14,11 @@
     min-height: 20rem;
 }
 
+.home .cta-block a:focus {
+  outline-offset: 3px;
+  outline: dotted 3px;
+}
+
 .home .cta-block.animation-block {
     display: block;
     position: relative;
@@ -185,7 +190,7 @@
     margin-top: 5rem;
 }
 
-.home .journal:before { 
+.home .journal:before {
     content: "";
     position: absolute;
     top: -1rem;
@@ -214,11 +219,11 @@
 }
 
 .home .projects h2 {
-    font-size: var(--font-size-xxlarge); 
+    font-size: var(--font-size-xxlarge);
     margin-bottom: 2rem;
 }
 
-.home .projects:before, .home .projects:after { 
+.home .projects:before, .home .projects:after {
     content: "";
     position: absolute;
     display: block;
@@ -319,7 +324,7 @@
     * {
         animation: none;
         animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important; 
+        animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important;
     }
 }

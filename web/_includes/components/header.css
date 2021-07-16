@@ -4,6 +4,11 @@
     text-transform: lowercase;
 }
 
+.mainHeader h1 > a:focus {
+  outline-offset: 3px;
+  outline: dotted 3px;
+}
+
 .mainHeader a {
     text-decoration: none;
     color: var(--font-color);
@@ -34,6 +39,7 @@
 }
 
 .mainHeader ul li a[aria-current],
+.mainHeader ul li a:focus,
 .mainHeader ul li a:hover {
     border: 1px solid var(--font-color);
     border-radius: 50%;
@@ -43,6 +49,11 @@
     position: relative;
     left: 0.75rem;
     left: calc(0.75rem + 1px);
+}
+
+.mainHeader ul li a:focus {
+  border-width: 3px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 850px) {

@@ -1,5 +1,6 @@
 <div class="wide content">
   <section class=" privacy">
+          <h2>Meta</h2>
       {{footer.privacy | markdownify | safe}}
   </section>
     <section>
@@ -11,7 +12,7 @@
     <section>
         <h2>Social media</h2>
 
-        <ul>
+        <ul class="social-media-links">
             {% for link in footer.social %}
                 <li><a href="{{link.href}}">{{link.linkName}}</a></li>
             {% endfor %}
