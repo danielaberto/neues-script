@@ -1,13 +1,13 @@
-<header class="mainHeader">   
+<header class="mainHeader">
     <div class="wide">
         <h1><a href="/">Neues Script</a></h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/journal">Journal</a></li>
+                <li><a {% if '/' == page.url %}aria-current="page"{% endif %} href="/">Home</a></li>
+                <li><a {% if '/projects/' == page.url %}aria-current="page"{% endif %} href="/projects">Projects</a></li>
+                <li><a {% if '/services/' == page.url %}aria-current="page"{% endif %}href="/services">Services</a></li>
+                <li><a {% if '/about/' == page.url %}aria-current="page"{% endif %}href="/about">About</a></li>
+                <li><a {% if '/journal/' == page.url %}aria-current="page"{% endif %} href="/journal">Journal</a></li>
             </ul>
         </nav>
     </div>

@@ -33,6 +33,7 @@
     margin-top: var(--font-size-large);
 }
 
+.mainHeader ul li a[aria-current],
 .mainHeader ul li a:hover {
     border: 1px solid var(--font-color);
     border-radius: 50%;
