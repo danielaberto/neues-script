@@ -5,7 +5,7 @@
         <div class="project" style="--category-color: {{currentProject.categories[0].color}}">
             <div class="project-wrapper">
                 <p class="project-categories">
-                    Posted in 
+                    Posted in
                     {% for category in currentProject.categories %}
                         <span>{{category.title}}</span>{% if loop.index < (currentProject.categories.length) %},{% endif %}
                         {% if loop.index === (currentProject.categories.length - 1) %}and{% endif %}

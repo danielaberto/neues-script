@@ -6,7 +6,7 @@
                 <div class="left">
                     <h3>{{currentPost.title}}</h3>
                     <p class="post-categories">
-                        Posted on {{ currentPost.publishedAt | readableDate }} in 
+                        Posted on {{ currentPost.publishedAt | readableDate }} in
                         {% for category in currentPost.categories %}
                             <span style="--category-color: {{category.color}}">{{category.title}}</span>{% if loop.index < (currentPost.categories.length) %},{% endif %}
                             {% if loop.index === (currentPost.categories.length - 1) %}and{% endif %}
@@ -14,7 +14,7 @@
                     </p>
                     <ul class="post-tags">
                         {% for tag in currentPost.tags %}
-                            <li>#{{tag}}</li> 
+                            <li>#{{tag}}</li>
                         {% endfor %}
                     </ul>
                 </div>
