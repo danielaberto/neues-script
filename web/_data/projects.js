@@ -26,6 +26,8 @@ async function getPosts () {
     subtitle,
     slug,
     excerpt,
+    readmoreprefix,
+    readmoresuffix,
     body,
     intro,
     coverImages,

@@ -7,15 +7,15 @@ navtitle: Home
 
 <div class="home">
   <section class="intro narrow">
-    <h1>{{home.headerTitle}}</h1>
-    <p class="large-text">
+    <p>
       {{home.headerDescription}}
     </p>
+    <h1 class="large-text">{{home.headerTitle}}</h1>
   </section>
 
   <section class="cta-block narrow animation-block">
     <div class="left">
-      <h2>Learn more about us</h2>
+      <h2>{{ home.gbTitle }}</h2>
       <ul>
         <li><a href="/services">Our services</a></li>
         <li><a href="/projects">Past projects</a></li>
@@ -26,7 +26,7 @@ navtitle: Home
         {% include "components/homeAnimation.njk" %}
     </div>
   </section>
-  
+
   <section class="projects">
     <div class="wide">
       <h2 class="narrow">{{home.projectsTitle}}</h2>

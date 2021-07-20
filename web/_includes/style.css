@@ -43,12 +43,12 @@ main {
     margin-top: 8rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .logo {
     font-family: "Faune", "Inter", "HelveticaNeue", Helvetica, sans-serif;
     font-weight: 400;
 }
 
-.brand h2 {
+.brand .line {
     color: var(--brand-color-1);
     position: fixed;
     text-transform: lowercase;
@@ -63,25 +63,25 @@ h1, h2, h3, h4, h5 {
     background-size: 6px 6px;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     z-index: -1;
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.brand h2:first-child {
+.brand .line:first-child {
     top: 200px;
     left: -360px;
     transform: rotate(-90deg);
     /* animation: brand-left 10s none infinite; */
 }
 
-.brand h2:last-child {
+.brand .line:last-child {
     bottom: 170px;
     right: -300px;
     transform: rotate(-90deg);
@@ -114,6 +114,23 @@ blockquote {
     margin-bottom: 3rem;
 }
 
+.post-body a:focus,
+.read-more a:focus {
+  outline-offset: 3px;
+  outline: dotted 3px;
+}
+
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
 @keyframes brand-left {
     0% {
         top: 200px;
@@ -142,4 +159,32 @@ blockquote {
     html {
         font-size: 16px;
     }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animation *,
+  #shapes * {
+    animation: none !important;
+  }
+}
+
+.animations-off .animation *,
+.animations-off #shapes * {
+  animation: none !important;
+  transition: none !important;
+}
+
+#pause-animation {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+#pause-animation svg {
+  width: 1rem;
+  height: 1rem;
 }

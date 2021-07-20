@@ -120,6 +120,18 @@ export default {
       title: '4️⃣ Journal: Limit',
       description: 'The limit defines the amount of posts that can be shown on the home page',
       validation: Rule => Rule.required()
+    },
+    {
+      name: 'gbTitle',
+      type: 'string',
+      title: 'Green Box Title',
+      description: 'Title of the green box'
+    },
+    {
+      name: 'gbContent',
+      type: 'bodyPortableText',
+      title: 'Green Box Content',
+      description: 'Content of the green box'
     }
   ]
 }

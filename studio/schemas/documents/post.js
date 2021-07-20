@@ -70,6 +70,16 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: 'readmoreprefix',
+      type: 'string',
+      title: 'Read more prefix for screen-reader'
+    },
+    {
+      name: 'readmoresuffix',
+      type: 'string',
+      title: 'Read more suffix for screen-reader'
+    },
+    {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body',

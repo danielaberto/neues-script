@@ -23,6 +23,8 @@ async function getPosts () {
     author,
     slug,
     excerpt,
+    readmoreprefix,
+    readmoresuffix,
     categories,
     body,
     tags,

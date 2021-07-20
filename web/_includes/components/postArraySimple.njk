@@ -7,7 +7,7 @@
                     <h3>{{currentPost.title}}</h3>
                 </div>
                 <div class="right">
-                    <p class="read-more"><a href="{{ post.url | url }}" class="read-more">Read more</a></p>
+                    <p class="read-more"><a href="{{ post.url | url }}" class="read-more"><span class="visually-hidden">{{ post.readmoreprefix }} </span>Read more<span class="visually-hidden"> {{ post.readmoresuffix }} </span></a></p>
                 </div>
             </div>
         </div>
