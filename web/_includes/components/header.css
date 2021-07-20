@@ -1,12 +1,7 @@
-.mainHeader .logo {
+.mainHeader h1 {
     font-size: var(--font-size-large);
     font-weight: 600;
     text-transform: lowercase;
-}
-
-.mainHeader .logo > a:focus {
-  outline-offset: 3px;
-  outline: dotted 3px;
 }
 
 .mainHeader a {
@@ -38,8 +33,6 @@
     margin-top: var(--font-size-large);
 }
 
-.mainHeader ul li a[aria-current],
-.mainHeader ul li a:focus,
 .mainHeader ul li a:hover {
     border: 1px solid var(--font-color);
     border-radius: 50%;
@@ -49,11 +42,6 @@
     position: relative;
     left: 0.75rem;
     left: calc(0.75rem + 1px);
-}
-
-.mainHeader ul li a:focus {
-  border-width: 3px;
-  background-color: #fff;
 }
 
 @media screen and (max-width: 850px) {
