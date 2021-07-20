@@ -1,30 +1,30 @@
 <div class="wide content">
-  <section class=" privacy">
-          <h2>Meta</h2>
-      {{footer.privacy | markdownify | safe}}
+  <section>
+    <h2>Contact us</h2>
+    <p>
+      {{ footer.contact }}
+    </p>
   </section>
-    <section>
-        <h2>Contact</h2>
-        <p>
-            {{footer.contact}}
-        </p>
-    </section>
-    <section>
-        <h2>Social media</h2>
+  <section class=" privacy">
+    <h2>Neues Script Website</h2>
+    {{ footer.privacy | markdownify | safe }}
+  </section>
 
-        <ul class="social-media-links">
-            {% for link in footer.social %}
-                <li><a href="{{link.href}}">{{link.linkName}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
+  <section>
+    <h2>Connect</h2>
+
+    <ul class="social-media-links">
+      {% for link in footer.social %}
+        <li><a href="{{ link.href }}">{{ link.linkName }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>
 
 
-
 {% set css %}
-    {% include "components/footer.css" %}
+  {% include "components/footer.css" %}
 {% endset %}
 <style>
-    {{ css | cssmin | safe }}
+  {{ css | cssmin | safe }}
 </style>
