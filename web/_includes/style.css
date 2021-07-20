@@ -171,4 +171,20 @@ blockquote {
 .animations-off .animation *,
 .animations-off #shapes * {
   animation: none !important;
+  transition: none !important;
+}
+
+#pause-animation {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+#pause-animation svg {
+  width: 1rem;
+  height: 1rem;
 }
