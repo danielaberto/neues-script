@@ -78,6 +78,11 @@
     left: -0.4rem;
 }
 
+.intro .kicker {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 /* .home .cta-block .right:before {
     content: " ";
     display: block;
