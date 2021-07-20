@@ -182,6 +182,7 @@ blockquote {
   border: none;
   background: transparent;
   -webkit-appearance: none;
+  min-height: 2rem;
 }
 
 #pause-animation svg {

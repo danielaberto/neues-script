@@ -83,6 +83,10 @@ footer a:focus {
   outline: dotted 3px;
 }
 
+footer .contact-column p {
+  max-width: 19ch;
+}
+
 @media screen and (max-width: 900px) {
     footer .content {
         grid-template-columns: 1fr;
